@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(black, white);
+  background: lightgreen;
   font-family: sans-serif;
   color: white;
 }
@@ -26,6 +26,10 @@ body {
 
 .temperature {
   flex-direction: column;
+}
+
+.temperature:hover {
+  cursor: pointer;
 }
 
 .degree-section {

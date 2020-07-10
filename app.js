@@ -31,14 +31,19 @@ window.addEventListener("load", () => {
           temperatureDescription.textContent = summary;
           locationTimezone.textContent = data.timezone; //because this data is not in "currently"
 
+          //FORMULA FOR CELSIUS
+          let celsius = (temperature - 32) * (5 / 90);
+
           //Set Icon
           setIcons(icon, document.querySelector(".icon"));
 
           //Toggle Celsius & Farenheit
           temperatureSection.addEventListener("click", () => {
             if (temperatureSpan.textContent === "F") {
+              temperatureDegree.textContent = Math.floor(celsius);
               temperatureSpan.textContent = "C";
             } else {
+              temperatureDegree.textContent = temperature;
               temperatureSpan.textContent = "F";
             }
           });
