@@ -31,7 +31,7 @@ window.addEventListener("load", () => {
           locationTimezone.textContent = data.timezone; //because this data is not in "currently"
 
           //FORMULA FOR CELSIUS
-          let celsius = (temperature - 32) * (5 / 90);
+          let celsius = (temperature - 32) * (5 / 9);
 
           //Set Icon
           setIcons(icon, document.querySelector(".icon"));
