@@ -22,7 +22,6 @@ window.addEventListener("load", () => {
           return response.json();
         })
         .then((data) => {
-          console.log(data);
           //Get Data from the API
           const { temperature, summary, icon } = data.currently;
 
