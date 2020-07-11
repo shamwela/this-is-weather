@@ -1,9 +1,7 @@
 window.addEventListener("load", () => {
   let long;
   let lat;
-  let temperatureDescription = document.querySelector(
-    ".temperature-description"
-  );
+  let temperatureDescription = document.querySelector(".temperature-description");
   let temperatureDegree = document.querySelector(".temperature-degree");
   let locationTimezone = document.querySelector(".location-timezone");
   let temperatureSection = document.querySelector(".temperature");
@@ -23,7 +21,11 @@ window.addEventListener("load", () => {
         })
         .then((data) => {
           //Get Data from the API
-          const { temperature, summary, icon } = data.currently;
+          const {
+            temperature,
+            summary,
+            icon
+          } = data.currently;
 
           //Set DOM elements from the API
           temperatureDegree.textContent = temperature;
@@ -51,7 +53,9 @@ window.addEventListener("load", () => {
   }
 
   function setIcons(icon, iconID) {
-    const skycons = new Skycons({ color: "white" });
+    const skycons = new Skycons({
+      color: "white"
+    });
 
     //e.g. partly-cloudy-night => PARTLY_CLOUDY_NIGHT
     const currentIcon = icon.replace(/-/g, "_").toUpperCase();
