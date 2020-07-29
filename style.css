@@ -1,47 +1,47 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: black;
-  font-family: sans-serif;
-  color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 .location,
 .temperature {
-  height: 30vh;
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .temperature {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .temperature:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .degree-section {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .temperature-degree {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 .temperature-unit {
-  margin: 10px;
-  font-size: 30px;
+    margin: 10px;
+    font-size: 30px;
 }
